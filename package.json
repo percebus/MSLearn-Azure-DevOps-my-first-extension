@@ -1,0 +1,36 @@
+{
+  "name": "my-first-extension",
+  "version": "0.1.0",
+  "description": "Azure DevOps \"my-first-extension\"",
+  "main": "index.js",
+  "scripts": {
+    "npm:install:global": "npm install --location=global tfx-cli",
+    "setup": "npm run npm:install:global",
+    "prettier": "prettier .",
+    "prettier:write": "npm run prettier -- --write",
+    "prettier:check": "npm run prettier -- --check",
+    "style": "npm run prettier:write",
+    "lint": "npm run prettier:check",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/percebus/MSLearn-Azure-DevOps-my-first-extension.git"
+  },
+  "keywords": [
+    "azure",
+    "DevOps",
+    "extension",
+    "AzDO"
+  ],
+  "author": "Microsoft",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/percebus/MSLearn-Azure-DevOps-my-first-extension/issues"
+  },
+  "homepage": "https://github.com/percebus/MSLearn-Azure-DevOps-my-first-extension#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "vss-web-extension-sdk": "^5.141.0"
+  }
+}
