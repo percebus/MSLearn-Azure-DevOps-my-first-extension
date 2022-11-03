@@ -1,6 +1,6 @@
 {
   "name": "percebus-first-extension",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Azure DevOps my-first-extension",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,9 @@
     "prettier": "prettier .",
     "prettier:write": "npm run prettier -- --write",
     "prettier:check": "npm run prettier -- --check",
-    "tfx:extension:create": "npx tfx-cli extension create --rev-version",
+    "tfx:extension": "npx tfx-cli extension",
+    "tfx:extension:create": "npm run tfx:extension -- create --rev-version",
+    "tfx:extension:publisher:JCystems:delete": "npm run tfx:extension -- publisher delete --publisher JCystems",
     "style": "npm run prettier:write",
     "lint": "npm run prettier:check",
     "test": "exit 0"
