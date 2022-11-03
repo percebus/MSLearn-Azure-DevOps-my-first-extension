@@ -1,8 +1,8 @@
 {
   "manifestVersion": 1,
-  "id": "my-first-extension",
+  "id": "percebus-first-extension",
   "publisher": "JCystems",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "My First Extension",
   "description": "A sample Visual Studio Services extension",
   "public": false,

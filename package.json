@@ -1,14 +1,15 @@
 {
-  "name": "my-first-extension",
-  "version": "0.1.0",
-  "description": "Azure DevOps \"my-first-extension\"",
+  "name": "percebus-first-extension",
+  "version": "1.0.1",
+  "description": "Azure DevOps my-first-extension",
   "main": "index.js",
   "scripts": {
-    "npm:install:global": "npm install --location=global tfx-cli",
+    "npm:install:global": "npm install --location=global yarn",
     "setup": "npm run npm:install:global",
     "prettier": "prettier .",
     "prettier:write": "npm run prettier -- --write",
     "prettier:check": "npm run prettier -- --check",
+    "tfx:extension:create": "npx tfx-cli extension create --rev-version",
     "style": "npm run prettier:write",
     "lint": "npm run prettier:check",
     "test": "exit 0"
@@ -31,6 +32,7 @@
   "homepage": "https://github.com/percebus/MSLearn-Azure-DevOps-my-first-extension#readme",
   "devDependencies": {
     "prettier": "^2.7.1",
+    "tfx-cli": "^0.12.0",
     "vss-web-extension-sdk": "^5.141.0"
   }
 }
