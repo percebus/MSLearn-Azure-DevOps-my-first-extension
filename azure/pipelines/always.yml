@@ -10,8 +10,9 @@ steps:
       versionSpec: "16.x"
     displayName: "setup node@16.x"
 
+  - script: npm setup:ci
+    displayName: "npm run setup:ci --if-present"
   - script: npm ci
     displayName: "npm install"
-
   - script: npm run lint
     displayName: "npm lint"
