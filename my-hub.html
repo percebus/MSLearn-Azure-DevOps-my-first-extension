@@ -14,8 +14,9 @@
     <script type="text/javascript">
       VSS.init();
       VSS.ready(function () {
-        document.getElementById("name").innerText =
-          VSS.getWebContext().user.name;
+        webContext = VSS.getWebContext();
+        nameHTMLElementDiv = document.getElementById("name");
+        nameHTMLElementDiv.innerText = webContext.user.name;
       });
     </script>
   </head>
